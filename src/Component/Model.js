@@ -16,7 +16,10 @@ export default class Model extends Component {
             style={{ backgroundImage: "url(" + "./glassesImage/model.jpg" }}
           >
             <div id="avatarHasGlass">
-              <img src={url} />
+              <img
+                src={url}
+                style={{ display: this.props.showDetail ? "block" : "none" }}
+              />
             </div>
           </div>
           <div
